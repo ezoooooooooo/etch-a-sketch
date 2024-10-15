@@ -3,6 +3,7 @@ const btn = document.querySelector(".black");
 const btnGrid = document.querySelector(".new");
 const btnRgb = document.querySelector(".rgb");
 const btnErase = document.querySelector(".erase");
+const btnClear = document.querySelector(".clear");
 
 btnGrid.addEventListener("click", () => {
   let rowsNumber = parseInt(prompt("Enter rows number between 1 and 100"));
@@ -42,12 +43,13 @@ function rowsAndColumns(rowsNumber) {
       });
     });
     btnErase.addEventListener("click", () => {
-      square.addEventListener("mouseover",() => {
+      square.addEventListener("mouseover", () => {
         square.style.backgroundColor = "";
-      })
-    }
-    )
-
+      });
+    });
+    btnClear.addEventListener("click", () => {
+      square.style.backgroundColor = "";
+    })
 
     container.appendChild(square);
   }

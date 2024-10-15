@@ -58,6 +58,13 @@ button.rgb {
 button.rgb:hover {
   background-color: #e53935;
 }
+button.erase{
+  background-color:cadetblue;
+  color: white;
+}
+button.erase:hover{
+  background-color: cadetblue;
+}
 
 .container {
   width: 80vmin;
