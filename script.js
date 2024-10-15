@@ -18,7 +18,7 @@ btnGrid.addEventListener("click", () => {
 });
 
 function rowsAndColumns(rowsNumber) {
-  container.innerHTML = "";
+  container.textContent = "";
   const squareSize = 100 / rowsNumber;
 
   for (let i = 1; i <= rowsNumber * rowsNumber; i++) {
