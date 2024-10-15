@@ -65,6 +65,13 @@ button.erase{
 button.erase:hover{
   background-color: cadetblue;
 }
+button.clear{
+  background-color: darkkhaki;
+  color: white;
+}
+button.clear:hover{
+  background-color: darkkhaki;
+}
 
 .container {
   width: 80vmin;
