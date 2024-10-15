@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 const btn = document.querySelector(".black");
 const btnGrid = document.querySelector(".new");
 const btnRgb = document.querySelector(".rgb");
+const btnErase = document.querySelector(".erase");
 
 btnGrid.addEventListener("click", () => {
   let rowsNumber = parseInt(prompt("Enter rows number between 1 and 100"));
@@ -40,6 +41,13 @@ function rowsAndColumns(rowsNumber) {
         square.style.backgroundColor = color;
       });
     });
+    btnErase.addEventListener("click", () => {
+      square.addEventListener("mouseover",() => {
+        square.style.backgroundColor = "";
+      })
+    }
+    )
+
 
     container.appendChild(square);
   }
